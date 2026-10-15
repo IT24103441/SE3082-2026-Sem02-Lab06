@@ -1,0 +1,1 @@
+#pragma omp master allows only the master thread (thread 0) to execute the block.
