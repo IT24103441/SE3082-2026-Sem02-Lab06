@@ -1,1 +1,14 @@
 
+Without collapse: #pragma omp parallel for
+Only the outer loop iterations are divided among threads.
+
+Example:
+Thread 0 → r=1
+Thread 1 → r=2
+Thread 2 → r=3
+
+With: #pragma omp parallel for collapse(2)
+both loops become one large loop:
+
+5 × 10 = 50 iterations
+and threads share all 50 tasks.
