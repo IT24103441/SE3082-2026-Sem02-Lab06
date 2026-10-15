@@ -1,0 +1,1 @@
+#pragma omp single allows only one thread to execute the block. The remaining threads skip that block and continue.
