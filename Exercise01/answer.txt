@@ -1,0 +1,1 @@
+pragma omp barrier forces all threads to stop at that point until every thread reaches the barrier. After all threads arrive, they continue execution together.
